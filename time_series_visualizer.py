@@ -17,7 +17,7 @@ limiteAlto = df['value'].quantile(0.975)
 df = df[(df['value'] >= limiteBaixo) & (df['value'] <= limiteAlto)] 
 
 def draw_line_plot():
-    # Draw line plot
+    #Draw line plot
     df_glinha = df.copy()
         #Cria a figura e o eixo delimitando o tamanho
     fig, ax = plt.subplots(figsize=(20,6))
